@@ -57,6 +57,21 @@ public class App {
         System.out.println(dateTime.toString("MM/dd/yyyy HH:mm Z"));
     }
 
+    public void getMyBirthDay(){
+        DateTime dateTime =  new DateTime(2000,8,28,12,0,0);
+        //getCentury
+        System.out.println(dateTime.getCenturyOfEra());
+        //getDay
+        System.out.println(dateTime.getDayOfWeek());
+        //getMonth
+        System.out.println(dateTime.getDayOfMonth());
+        //getMinute
+        System.out.println(dateTime.getMinuteOfDay());
+
+
+
+    }
+
 
     public static void main(String[] args) {
         Date date = new Date();
@@ -76,6 +91,9 @@ public class App {
         app.getTuesDay();
 
         app.formatDate();
+
+
+        app.getMyBirthDay();
 
     }
 }
